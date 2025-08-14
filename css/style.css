@@ -1,0 +1,15 @@
+/* Start Global Variables */
+:root {
+  --mainColor: #ffefe5;
+  --secondColor: #ff8d4d;
+  --thirdColor: #ffbe99;
+}
+
+* {
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background-color: var(--mainColor);
+}
+/* End Global Variables */
