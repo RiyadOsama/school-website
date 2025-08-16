@@ -160,9 +160,9 @@ header {
 .show-options {
   display: block;
 }
-ul {
+.options ul {
   list-style: none;
-  margin: 15px 0;
+  margin: 10px 0;
   padding: 10px;
   width: fit-content;
   position: absolute;
@@ -170,16 +170,152 @@ ul {
   border: 2px solid black;
   border-radius: 12px;
   text-align: center;
+  background-color: var(--mainColor);
 }
-ul li {
+.options ul li {
   padding: 5px;
 }
-ul li a {
+.options ul li a {
   padding: 3px 5px;
 }
-ul li a:hover {
+.options ul li a:hover {
   box-shadow: 0 0 3px 2px;
   border-radius: 5px;
 }
 /* End Navbar */
 /* End Header */
+/* Start Footer */
+footer {
+  background-color: #fff;
+  margin: 10px 51px;
+  padding: 100px 0 40px 0;
+  gap: 14px;
+  border-radius: 8px;
+  border: 2px solid black;
+}
+footer .sub-container:first-child {
+  width: 30%;
+}
+footer .sub-container:last-child {
+  width: 70%;
+}
+footer .page-content a {
+  display: block;
+}
+footer .footer-logoo {
+  gap: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+footer .contact {
+  display: flex;
+  padding: 5px;
+  gap: 10px;
+}
+footer .policy a:first-child {
+  position: relative;
+  margin-right: 30px;
+}
+footer .policy a:first-child::after {
+  content: "";
+  position: absolute;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 100%;
+  background-color: black;
+}
+footer .policy a:last-child {
+  position: relative;
+  margin-left: 30px;
+}
+footer .policy a:last-child::before {
+  content: "";
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 100%;
+  background-color: black;
+}
+footer .social a {
+  margin: 0 10px;
+  background-color: var(--fourthColor);
+  padding: 16px;
+  border-radius: 8px;
+  border: 2px solid black;
+}
+footer .bottom {
+  margin-top: 30px;
+}
+/* Taplet View */
+@media (max-width: 992px) {
+  footer .container {
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+  }
+  footer .sub-container {
+    width: 100% !important;
+    margin: auto;
+  }
+  footer .footer-logo,
+  footer .contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .sub-container:last-child {
+    margin: 30px auto;
+  }
+}
+/* Mobile View */
+@media (max-width: 768px) {
+  footer .sub-container:last-child {
+    display: flex;
+    justify-content: flex-start !important;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+  footer .links {
+    width: 45%;
+    margin-bottom: 30px;
+  }
+  footer .page-title {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  footer .page-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  footer .top {
+    flex-direction: column;
+  }
+  footer .social {
+    margin: 40px 0 20px;
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media (max-width: 576px) {
+  footer .links {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  footer .top .policy a {
+    width: 100%;
+    display: block;
+    margin: 0;
+  }
+  footer .top .policy a::after,
+  footer .top .policy a::before {
+    display: none;
+  }
+}
+/* End Footer */
