@@ -13,6 +13,54 @@
 body {
   background-color: var(--mainColor);
 }
+/* ///////////////////////////////////////////////////////// */
+.hText{
+font-family: Raleway;
+font-weight: 800;
+font-style: ExtraBold;
+font-size: 54px;
+line-height: 130%;
+letter-spacing: 0%;
+
+}
+.hText span{
+  color: var(--secondColor);
+}
+.statdiv{
+  width: 765;
+height: 141;
+opacity: 1;
+gap: 13px;
+border-radius: 12px;
+border-width: 2px;
+padding-top: 24px;
+padding-right: 50px;
+padding-bottom: 24px;
+padding-left: 50px;
+box-shadow: 8px 8px 0px 1px #FFBE99;
+background: #FFEFE5;
+
+}
+.subText{
+  width: 357;
+height: 39;
+opacity: 1;
+gap: 10px;
+padding-bottom: 6px;
+border-bottom-width: 2px;
+
+}
+.parag{
+  font-family: Outfit;
+font-weight: 500;
+font-style: Medium;
+font-size: 20px;
+line-height: 150%;
+letter-spacing: 0%;
+
+}
+
+/* ////////////////////////////////////////////////////////////////////// */
 
 a {
   text-decoration: none;
