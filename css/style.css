@@ -378,36 +378,36 @@ header {
 }
 /* End FAQs */
 
-/* Start Testimonials */
-#testimonials .item {
+/* Start Links */
+#links .item {
   height: 400px;
   width: 48%;
   transition: all 0.5s;
 }
 
-#testimonials .item:hover {
+#links .item:hover {
   transform: translateY(2px);
 }
 
-#testimonials .item h3 {
+#links .item h3 {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
 }
 
-#testimonials .item .connecting-line {
+#links .item .connecting-line {
   margin: 20px 0;
 }
 
-#testimonials .item .connecting-line svg {
+#links .item .connecting-line svg {
   box-shadow: 0 0 10px 1px #ff6200;
 }
 
-#testimonials .item p {
+#links .item p {
   font-weight: 500;
   line-height: 150%;
 }
 
-#testimonials .item button {
+#links .item button {
   width: 100%;
   background-color: var(--mainColor);
   border-radius: 8px;
@@ -418,24 +418,24 @@ header {
   transition: all 0.5s;
 }
 
-#testimonials .item button:hover {
+#links .item button:hover {
   transform: translateY(5px);
 }
 
 /* Taplet View */
 @media (max-width: 992px) {
-  #testimonials .item {
+  #links .item {
     width: 80%;
   }
 }
 
 /* Mobile View */
 @media (max-width: 576px) {
-  #testimonials .item {
+  #links .item {
     width: 100%;
   }
 }
-/* End Testimonials */
+/* End Links */
 
 /* Start Footer */
 footer {
