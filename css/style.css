@@ -328,6 +328,62 @@ header {
 }
 /* End Hero */
 
+/* Start Benefits */
+#benefits .item {
+  height: 300px;
+  width: 30%;
+  padding: 80px 50px 50px 50px;
+  transition: all 0.5s;
+}
+
+#benefits legend {
+  position: relative;
+  left: -40%;
+  background-color: var(--thirdColor);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#benefits legend img {
+  width: 70%;
+  height: auto;
+}
+
+#benefits .item:hover {
+  transform: translateY(2px);
+}
+
+#benefits .item h4 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+#benefits .item p {
+  font-weight: 500;
+  line-height: 150%;
+}
+
+/* Taplet View */
+@media (max-width: 992px) {
+  #benefits .item {
+    width: 45%;
+  }
+}
+
+@media (max-width: 720px) {
+  #benefits .item {
+    width: 85%;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 576px) {
+  #benefits .item {
+    width: 100%;
+  }
+}
+/* End Benefits */
+
 /* Start FAQs */
 .faqs-info-Container {
   display: flex;
