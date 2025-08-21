@@ -174,6 +174,7 @@ header {
   align-items: center;
   justify-content: center;
   border-left: 2px solid black;
+  cursor: pointer;
 }
 
 .active {
@@ -248,21 +249,14 @@ header {
   display: none;
 }
 
-.show-options {
-  display: block;
-}
-
 .options ul {
   list-style: none;
-  margin: 10px 0;
-  padding: 10px;
-  width: fit-content;
-  position: absolute;
-  right: 51px;
+  margin-top: 14px;
+  padding: 10px 0;
   border: 2px solid black;
   border-radius: 12px;
   text-align: center;
-  background-color: var(--mainColor);
+  background-color: white;
 }
 
 .options ul li {
@@ -273,9 +267,9 @@ header {
   padding: 3px 5px;
 }
 
-.options ul li a:hover {
-  box-shadow: 0 0 3px 2px;
-  border-radius: 5px;
+.options ul li:hover {
+  background-color: var(--mainColor);
+  cursor: pointer;
 }
 /* End Navbar */
 /* End Header */
