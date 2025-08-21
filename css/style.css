@@ -384,93 +384,84 @@ header {
 }
 /* End Benefits */
 
-
-
 /*Start testimonials */
-
 #testimonials {
-position:relative;
-
-}
-.testimonials-content{
   position: relative;
-  text-align: center;
-  margin: auto;
-  
 }
 
-.testimonial-item{
+#testimonials .owl-carousel {
+  margin-top: 20px;
+}
+
+.testimonial-item {
   background-color: white;
   border: 2px solid black;
-  border-radius:20px;
-  box-shadow: 5px 10px 5px 0;
+  border-radius: 12px;
+  box-shadow: 4px 4px 4px 0;
   padding: 25px;
   text-align: center;
-  margin-bottom:20px;
-  width:80%;
+  width: 80%;
   height: 350px;
   margin: auto;
-
+  margin-bottom: 5px;
 }
 
-.testimonial-item .testimonial-author-name{
-  margin-bottom:20px;
+.testimonial-item .testimonial-author-name {
+  margin-bottom: 20px;
 }
 
-.testimonial-item .testimonial-author-img{
-
-width:50px;
-margin:auto;
-}
-.testimonial-item .testimonial-author-img img{
-/* width: 50px; */
-
+.testimonial-item .testimonial-author-img {
+  width: 50px;
+  margin: auto;
 }
 
-.testimonial-item .testimonial-rating{
-  margin:10px;
+.testimonial-item .testimonial-rating {
+  margin: 10px;
   display: flex;
   justify-content: center;
 }
 
-.testimonial-item .testimonial-rating img{
-width:20px;
-margin:3px
+.testimonial-item .testimonial-rating img {
+  width: 20px;
+  margin: 3px;
 }
+
+.owl-nav button {
+  background-color: white;
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 11px;
+}
+
 .owl-nav button.owl-prev,
 .owl-nav button.owl-next {
   position: absolute;
   top: 40%;
 }
 
-.owl-nav button.owl-prev { left: -25px; }
-.owl-nav button.owl-next { right:-25px; }
+.owl-nav button.owl-prev {
+  left: -25px;
+}
+
+.owl-nav button.owl-next {
+  right: -25px;
+}
 
 @media (max-width: 576px) {
-  .testimonial-item {
-    /* width: 80%; */
-    /* height: auto; */
+  .owl-nav button.owl-prev,
+  .owl-nav button.owl-next {
+    position: static;
+    transform: none;
+    margin: 10px;
   }
 
-  .owl-nav button.owl-prev,
-.owl-nav button.owl-next {
- 
- position: static;      
-    transform: none;      
-    margin: 10px; 
-}
   .owl-nav {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     margin-top: 15px;
+  }
 }
-}
-
-
 /*End testimonials */
-
-
-
 
 /* Start FAQs */
 .faqs-info-Container {

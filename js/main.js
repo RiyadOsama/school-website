@@ -9,42 +9,34 @@ $("#btn").click(function () {
 });
 // End Header
 
-
 // Start Testimonials
-
-  
-
-$(document).ready(function(){
+$(document).ready(function () {
   $(".testimonials-carousel").owlCarousel({
-    loop: true,          
-    margin: 20,           
-    nav: true,            
-    dots: true,     
-    autoplay: false,     
-    autoplayTimeout: 3000, 
+    loop: true,
+    margin: 20,
+    nav: true,
+    dots: true,
+    autoplay: false,
+    autoplayTimeout: 3000,
     responsive: {
       0: {
-        items: 1, 
-        nav: true
+        items: 1,
+        nav: true,
       },
       768: {
-        items: 2,  
-        nav: true
+        items: 2,
+        nav: true,
       },
       992: {
-        items: 3, 
-        nav: true
-      }
-    }
-,
-
+        items: 3,
+        nav: true,
+      },
+    },
     navText: [
-      '<button><i class="fa-solid fa-arrow-left"></i></button></i>', 
-      '<button><i class="fa-solid fa-arrow-right"></i></button></i>'  
-    ]
- 
+      '<button><i class="fa-solid fa-arrow-left"></i></button></i>',
+      '<button><i class="fa-solid fa-arrow-right"></i></button></i>',
+    ],
   });
-
 });
 // End Testimonials
 
